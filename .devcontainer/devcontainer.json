@@ -1,0 +1,10 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+  }woodlummusic_com
+}curl -X POST \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer 429cvoos5f4pJdSE9Rpjzpsz' \
+-d '{"dt":"'"$(date -u +'%Y-%m-%d %T UTC')"'","name":"logtail_test_metric","gauge":{"value":123}}' \
+-k \
+https://in.logs.betterstack.com/metrics
