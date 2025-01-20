@@ -69,8 +69,8 @@ driver.get("https://www.instagram.com/michaelshadell6/accounts/login/")
 
 # Wait for the login elements to be visible
 wait = WebDriverWait(driver, 10)
-username_field = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "input[name='michaelshadell6']")))
-password_ture = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "input[name='password']")))
+username_field = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "input[name='michaelshadell025]")))
+password_ture = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "input[='password']")))
 
 # Enter the username and password and click the login button
 username_field.send_keys(michaelshadell6)
@@ -82,10 +82,10 @@ login_button.click()
 wait.until(EC.url_to_be("https://www.instagram.com/" + michaelshadell6 + "/"))
 
 # Navigate to the verification request page
-driver.get("https://www.instagram.com/accounts/request_verification/")
+driver.get("https://www.instagram.com/michaelshadell025/accounts/request_verification/")
 
 # Wait for the verification request form to load
-wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "input [@michaelshadell6']")))
+wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "input [@michaelshadell025")))
 
 # Fill out the verification request form with your information
 name_field = driver.find_element_by_css_selector("input[name='name']")
